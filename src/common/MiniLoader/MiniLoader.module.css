@@ -1,0 +1,63 @@
+.loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.boxContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.circle {
+    min-width: 5px;
+    min-height: 5px;
+    margin: 10px 0;
+    border-radius: 50%;
+    background-color: #ffffff;
+    animation: move 500ms linear 0ms infinite;
+    margin-right: 10px;
+}
+.circle:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: grow 500ms linear 0ms infinite;
+}
+.circle:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    animation: grow 500ms linear 0s infinite reverse;
+}
+  
+@keyframes grow {
+    from {
+      transform: scale(0, 0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+}
+@keyframes move {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(15px);
+    }
+}

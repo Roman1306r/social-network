@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+    --color: #006DF0;
+    --index: calc(1vw + 1vh);
+    --hovered-color: #2a26ff;
+    --dark-color: #1e1e1e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+
+input {
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  font-size: calc(var(--index) * 1);
+  border: 1px solid rgb(221, 221, 221);
+  font-family: inherit;
+}
+textarea {
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  font-size: calc(var(--index) * 1);
+  border: 1px solid rgb(221, 221, 221);
+  resize: vertical;
+  max-height: 30vh;
+  min-height: 10vh;
+  font-family: inherit;
+}
+
+
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Rajdhani', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
